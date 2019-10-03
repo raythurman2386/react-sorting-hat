@@ -7,6 +7,7 @@ import {
   ravenclawData,
   slytherinData,
 } from './data'
+import HouseView from './views/HouseView'
 
 class App extends Component {
   // constructor for state
@@ -24,6 +25,7 @@ class App extends Component {
     return (
       <div className='App'>
         <h1>Sorting Hat</h1>
+        <HouseView house={this.state.gryffindor} />
       </div>
     )
   }
