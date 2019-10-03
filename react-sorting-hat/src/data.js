@@ -1,4 +1,7 @@
-import {}
+import Gryffindor from './assets/gryffindor_crest.png'
+import Hufflepuff from './assets/hufflepuff_crest.png'
+import Ravenclaw from './assets/ravenclaw_crest.png'
+import Slytherin from './assets/slytherin_crest.png'
 
 export const houseData = [
   {
@@ -9,7 +12,7 @@ export const houseData = [
     traits: ['Bravery', 'Daring', 'Nerve', 'Chivalry'],
     head: 'Minerva McGonagall',
     ghost: 'Nearly Headless Nick',
-    crest: '',
+    crest: Gryffindor,
   },
   {
     house: 'Hufflepuff',
@@ -19,7 +22,7 @@ export const houseData = [
     traits: ['Hard Work', 'Dedication', 'Patience', 'Loyalty', 'Fair Play'],
     head: 'Pomona Sprout',
     ghost: 'Fat Friar',
-    crest: '',
+    crest: Hufflepuff,
   },
   {
     house: 'Ravenclaw',
@@ -28,7 +31,7 @@ export const houseData = [
     traits: ['Intelligence', 'Knowledge', 'Wit'],
     head: 'Filius Flitwick',
     ghost: 'Grey Lady',
-    crest: '',
+    crest: Ravenclaw,
   },
   {
     house: 'Slytherin',
@@ -37,6 +40,6 @@ export const houseData = [
     traits: ['Ambition', 'Cunning', 'Resourcefulness'],
     head: 'Serverus Snape',
     ghost: 'Bloody Baron',
-    crest: '',
+    crest: Slytherin,
   },
 ]
