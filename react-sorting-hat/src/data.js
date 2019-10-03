@@ -1,3 +1,5 @@
+import {}
+
 export const houseData = [
   {
     house: 'Gryffindor',
