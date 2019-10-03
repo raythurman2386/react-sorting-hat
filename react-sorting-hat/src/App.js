@@ -8,6 +8,7 @@ import {
   slytherinData,
 } from './data'
 import HouseView from './views/HouseView'
+import Hogwarts from './assets/the_sorting_hat.png'
 
 class App extends Component {
   // constructor for state
@@ -25,7 +26,11 @@ class App extends Component {
     return (
       <div className='App'>
         <h1>Sorting Hat</h1>
+        <img src={Hogwarts} alt='Hogwarts' />
         <HouseView house={this.state.gryffindor} />
+        <HouseView house={this.state.hufflepuff} />
+        <HouseView house={this.state.ravenclaw} />
+        <HouseView house={this.state.slytherin} />
       </div>
     )
   }
