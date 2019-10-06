@@ -32,4 +32,10 @@ const StyledLink = styled(Link)`
   border: none;
   text-decoration: none;
   text-align: center;
+
+  :hover {
+    background-color: #999;
+    color: white;
+    transition: 0.3s;
+  }
 `
