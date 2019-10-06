@@ -8,7 +8,7 @@ const Home = () => {
     <HomeWrapper>
       <h1>Welcome to Hogwarts</h1>
       <img src={Hogwarts} alt='Hogwarts' />
-      <StyledLink to='#'>Click to be Sorted</StyledLink>
+      <StyledLink to='/sorting'>Click to be Sorted</StyledLink>
     </HomeWrapper>
   )
 }

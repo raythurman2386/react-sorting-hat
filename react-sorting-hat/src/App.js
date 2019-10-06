@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
 // Import my house data
@@ -11,6 +11,7 @@ import {
 } from './data'
 import HouseView from './views/HouseView'
 import Home from './views/Home'
+import SortingView from './views/SortingView'
 
 class App extends Component {
   // constructor for state
@@ -28,7 +29,8 @@ class App extends Component {
     return (
       <AppWrapper className='App'>
         <Switch>
-          <Route path='' component={Home} />
+          <Route exact path='' component={Home} />
+          <Route path='/sorting' component={SortingView} />
           <Route
             path='/gryffindor'
             render={props => (
