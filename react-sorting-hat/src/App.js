@@ -69,4 +69,5 @@ const AppWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   color: white;
+  margin-top: 15%;
 `

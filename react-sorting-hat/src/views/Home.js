@@ -21,8 +21,6 @@ const HomeWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 98%;
-  opacity: 0.8;
-  z-index: 1;
 `
 const StyledLink = styled(Link)`
   padding: 5px 12px;
