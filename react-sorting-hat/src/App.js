@@ -10,7 +10,7 @@ import {
   slytherinData,
 } from './data'
 import HouseView from './views/HouseView'
-import Hogwarts from './assets/the_sorting_hat.png'
+import Home from './views/Home'
 
 class App extends Component {
   // constructor for state
@@ -27,10 +27,8 @@ class App extends Component {
   render() {
     return (
       <AppWrapper className='App'>
-        <h1>Sorting Hat</h1>
-        <img src={Hogwarts} alt='Hogwarts' />
         <Switch>
-          <Route path='' />
+          <Route path='' component={Home} />
           <Route
             path='/gryffindor'
             render={props => (
