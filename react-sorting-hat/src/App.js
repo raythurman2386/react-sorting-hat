@@ -26,7 +26,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
+      <AppWrapper className='App'>
         <h1>Sorting Hat</h1>
         <img src={Hogwarts} alt='Hogwarts' />
         <Switch>
@@ -56,9 +56,17 @@ class App extends Component {
             )}
           />
         </Switch>
-      </div>
+      </AppWrapper>
     )
   }
 }
 
 export default App
+
+const AppWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+`
