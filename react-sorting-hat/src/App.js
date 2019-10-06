@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <AppWrapper className='App'>
         <Switch>
-          <Route exact path='' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/sorting' component={SortingView} />
           <Route
             path='/gryffindor'
