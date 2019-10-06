@@ -29,10 +29,24 @@ class App extends Component {
       <div className='App'>
         <h1>Sorting Hat</h1>
         <img src={Hogwarts} alt='Hogwarts' />
-        <HouseView house={this.state.gryffindor} />
-        <HouseView house={this.state.hufflepuff} />
-        <HouseView house={this.state.ravenclaw} />
-        <HouseView house={this.state.slytherin} />
+        <Switch>
+          <Route
+            to='/gryffindor'
+            render={<HouseView {...props} house={this.state.gryffindor} />}
+          />
+          <Route
+            to='/hufflepuff'
+            render={<HouseView {...props} house={this.state.hufflepuff} />}
+          />
+          <Route
+            to='/ravenclaw'
+            render={<HouseView {...props} house={this.state.ravenclaw} />}
+          />
+          <Route
+            to='/slytherin'
+            render={<HouseView house={this.state.slytherin} />}
+          />
+        </Switch>
       </div>
     )
   }
