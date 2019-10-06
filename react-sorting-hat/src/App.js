@@ -30,21 +30,30 @@ class App extends Component {
         <h1>Sorting Hat</h1>
         <img src={Hogwarts} alt='Hogwarts' />
         <Switch>
+          <Route path='' />
           <Route
-            to='/gryffindor'
-            render={<HouseView {...props} house={this.state.gryffindor} />}
+            path='/gryffindor'
+            render={props => (
+              <HouseView {...props} house={this.state.gryffindor} />
+            )}
           />
           <Route
-            to='/hufflepuff'
-            render={<HouseView {...props} house={this.state.hufflepuff} />}
+            path='/hufflepuff'
+            render={props => (
+              <HouseView {...props} house={this.state.hufflepuff} />
+            )}
           />
           <Route
-            to='/ravenclaw'
-            render={<HouseView {...props} house={this.state.ravenclaw} />}
+            path='/ravenclaw'
+            render={props => (
+              <HouseView {...props} house={this.state.ravenclaw} />
+            )}
           />
           <Route
-            to='/slytherin'
-            render={<HouseView house={this.state.slytherin} />}
+            path='/slytherin'
+            render={props => (
+              <HouseView {...props} house={this.state.slytherin} />
+            )}
           />
         </Switch>
       </div>
